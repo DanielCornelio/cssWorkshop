@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.logo-nav{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+header {
+    background-color: #2c3e50;
+    padding: 10px;
+}
+#intro{
+    background-color: #18bc9c;
+}
+.intro-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+    color: white;
+}
+.portfolio-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio-item{
+    width: 400px;
+    padding: 10px;
+}
+.portfolio-item img{
+    width: 100%;
+}
