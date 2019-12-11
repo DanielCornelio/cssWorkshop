@@ -1,8 +1,2 @@
-/* El estilo se aplica a todos los elementos 
-"p", "a", "span" y "em" */
-p, a, span, em { text-decoration: underline; }
-
-/* El estilo se aplica solo a los elementos "em" 
-que se   encuentran dentro de "p a span" */
-p a span em { text-decoration: underline; }
+body { color: purple; }
 
