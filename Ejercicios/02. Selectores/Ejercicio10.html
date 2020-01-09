@@ -1,0 +1,29 @@
+<!-- Ejercicio 10. No se deben confundir los selectores siguientes -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* Todos los elementos de tipo "p" con atributo class="aviso" */
+        p.aviso{
+            color: red;
+        }
+        /* todos los elementos del atributo class="aviso" que esten dentro de cualquier elemento de tipo p */
+        p .aviso{
+            color: green;
+        }
+        /* Todos los elemento "p" de la página y todos los elementos con atributo class="aviso" de la pagina */
+        p, .aviso{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <p class="aviso">Lorem ipsum dolor sit.</p>
+    <p>Lorem, ipsum.<em class="aviso">Lorem, ipsum.</em>Lorem, ipsum.</p>
+    <h1 class="aviso">Lorem, ipsum dolor.</h1>
+</body>
+</html>

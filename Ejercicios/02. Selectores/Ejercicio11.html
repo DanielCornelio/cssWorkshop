@@ -1,3 +1,4 @@
+<!-- Ejercicio 11. Es posible aplicar los estilos de varias clases CSS sobre un mismo elemento -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,20 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        h1{
-            color: orange;
-        }
-        h2{
-            color: indigo;
-        }
-        p{
-            color: red;
-        }
+        .error{color:red;}
+        .destacado{font-size: 15px;}
+        .especial{font-weight: bold;}
     </style>
 </head>
 <body>
-    <h1>Lorem ipsum dolor sit amet.</h1>
-    <h2>Lorem ipsum dolor sit amet.</h2>
-    <p>Lorem ipsum dolor sit amet.</p>
+    <p class="especial destacado error">
+        Lorem, ipsum dolor.
+    </p>
 </body>
 </html>
