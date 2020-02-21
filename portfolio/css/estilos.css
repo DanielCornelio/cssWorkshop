@@ -67,9 +67,10 @@ nav{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 2.5rem;
+    justify-content: center;
 }
 .portfolio-item{
-    width: 400px;
+    width: 333px;
     padding: 10px;
 }
 .portfolio-item img{
