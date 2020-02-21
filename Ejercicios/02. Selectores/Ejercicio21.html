@@ -1,28 +1,29 @@
-<!-- Ejercicio 21. Paddings -->
+<!-- Ejercicio 21. No se deben confundir los selectores siguientes -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        .padre{
-            width: 150px;
-            background-color: aquamarine;
-            border: 1px solid red;
-            padding: 10px;
+        /* Todos los elementos de tipo "p" con atributo class="aviso" */
+        p.aviso{
+            color: red;
         }
-        .hijo{
-            padding: 20px 15px 10px 15px;
-            width: 100px;
-            background-color: pink;
+        /* todos los elementos del atributo class="aviso" que esten dentro de cualquier elemento de tipo p */
+        p .aviso{
+            color: green;
+        }
+        /* Todos los elemento "p" de la página y todos los elementos con atributo class="aviso" de la pagina */
+        p, .aviso{
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="padre">
-        <p class="hijo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, minima?</p>
-        <p class="hijo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, molestias.</p>
-    </div>
+    <p class="aviso">Lorem ipsum dolor sit.</p>
+    <p>Lorem, ipsum.<em class="aviso">Lorem, ipsum.</em>Lorem, ipsum.</p>
+    <h1 class="aviso">Lorem, ipsum dolor.</h1>
 </body>
 </html>

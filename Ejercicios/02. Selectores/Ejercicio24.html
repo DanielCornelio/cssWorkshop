@@ -1,0 +1,23 @@
+<!-- Ejercicio 24. No debe confundir los selectores siguientes -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Todos los selectores de tipo "p" con atributo id="aviso" */
+        p#aviso{color:indigo}
+        /* Todos los elementos con atributo id="aviso" que esten dentro 
+        de cualquier elemento tipo "p" */
+        p #aviso{color: red}
+        /* Todos los elementos "p" y todos los atributos id="aviso" de la página */
+        p, #aviso{text-decoration: underline;}
+    </style>
+</head>
+<body>
+    <div id="aviso">primer párrafo</div>
+    <div><p id="aviso">Segundo párrafo</p></div>
+    <p id="aviso">Tercer párrafo</p>
+</body>
+</html>

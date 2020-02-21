@@ -1,0 +1,29 @@
+<!-- Ejercicio 34. Tamaño real de una caja -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hijo{
+            width: 300px;
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-left: 30px;
+            margin-right: 30px;
+            border: 10px solid black;
+        }
+        /* 30px + 10px + 50px + 300px + 50px + 10px + 30px = 480px */
+        .padre{
+            border:2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="padre">
+        <div class="hijo">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Enim, libero.</div>
+    </div>
+</body>
+</html>
